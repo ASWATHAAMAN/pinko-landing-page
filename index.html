@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinko Landing Page</title>
+    <link
+      rel="shortcut icon"
+      href="./images/dress-code.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "oxford-blue": `#002857`,
+              "oxford-blue-3": `#001233`,
+              "delft-blue": `#33405c`,
+              "slate-gray": `#7d8597`,
+              "cherry-blossom-pink": `#ffb3c6`,
+              "bakerMiller-pink": `#ff8fab`,
+              "russian-violet": `#241943`,
+              lilac: `#be97c4`,
+              cornsilk: `#fefae1`,
+              "earth-yellow": `#dda25f`,
+              "tigers-eye": `#bb6b25`,
+            },
+            fontFamily: {
+              lato: ["Lato", `sans-serif`],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="class = overflow-hidden bg-cover bg-no-repeat p-12 text-center"
+      style="
+        background-image: url(https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+      "
+    >
+      <header class="flex justify-evenly items-center mx-4 my-14">
+        <div>
+          <h1 class="text-7xl text-bakerMiller-pink font-medium">Pinko</h1>
+        </div>
+        <div class="flex gap-x-16 items-center">
+          <a href="#" class="active text-lg">Home</a>
+          <a
+            href="aboutUs.html"
+            class="text-black text-lg hover:bg-black text-white py-2 px-8 rounded-lg"
+            >About Us</a
+          >
+          <a
+            href="blog.html"
+            class="text-black text-lg hover:bg-black text-white py-2 px-8 rounded-lg"
+            >Blog</a
+          >
+          <a
+            href="gallery.html"
+            class="text-black text-lg hover:bg-black text-white py-2 px-8 rounded-lg"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="text-black text-lg hover:bg-black text-white py-2 px-8 rounded-lg"
+            >Contact</a
+          >
+        </div>
+      </header>
+      <hero-container
+        class="flex items-center w-screen ml-60 mt-28 my-8 gap-20"
+      >
+        <left-hero class="w-screen">
+          <h2 class="text-5xl mb-8 text-cherry-blossom-pink">
+            Cras a risus dolor ac accumsan enim
+          </h2>
+          <p
+            class="text-xl mb-10 text-cherry-blossom-pink text-cherry-blossom-pink"
+          >
+            In hac habitasse platea dictumst. Nam tempor tortor elit, in
+            malesuada est. Maecenas fermentum lacus arcu, eu pretium mauris.
+            Cras a risus dolor, ac accumsan enim. Sed vehicula vestibulum
+            pulvinar.
+          </p>
+          <button
+            type="button"
+            class="px-8 py-2 bg-black text-cherry-blossom-pink text-xl rounded-lg font-bold"
+          >
+            Learn More
+          </button>
+        </left-hero>
+        <right-hero class="ml-20">
+          <img-container>
+            <img
+              src="./images/chutipon-pattanatitinon-LG8Mt7f7lXQ-unsplash.jpg"
+              class="w-6/12"
+              alt="thunder"
+          /></img-container>
+        </right-hero>
+      </hero-container>
+    </div>
+    <h2 class="text-4xl font-bold text-white bg-delft-blue w-full pl-72 pt-16">
+      Welcome To Pinko Theme
+    </h2>
+    <div
+      class="flex justify-center pl-72 pt-16 bg-delft-blue pb-[3rem] border-b-4 border-solid text-center"
+    >
+      <div class="border-black border-solid rounded-sm">
+        <img
+          src="./images/chair.jpg"
+          alt="chair"
+          class="w-[80%] object-cover"
+        />
+      </div>
+      <div class="w-[500%] pr-72">
+        <p class="text-[20px] font-[500] text-[white] mb-[1rem]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum
+          rhoncus pharetra. Sed in urna neque. Suspendisse nec arcu arcu, sed
+          pretium lacus.
+        </p>
+        <p class="text-[20px] font-[500] text-[gray]">
+          Pinko Theme is brought to you by
+          <a href="#" class="text-[red] text-[18px] underline"
+            >Website Templates</a
+          >. Feel free to adapt and apply this template for your websites.
+          Credits go to
+          <a href="#" class="text-[red] text-[18px] underline">Free Photos</a>
+          for photos and
+          <a href="#" class="text-[red] text-[18px] underline">forty-winks</a>
+          for brushes. Vivamus leo velit, convallis id, ultrices sit amet,
+          tempor a, libero. Quisque rhoncus nulla quis sem. Mauris quis nulla
+          sed ipsum pretium sagittis. Suspendisse feugiat. Validate
+          <a href="#" class="text-[red] text-[18px] underline">XHTML</a> and
+          <a href="#" class="text-[red] text-[18px] underline">CSS</a>.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-wrap width-[30%]">
+      <div>
+        <h3 class="text-[30px] font-[700]">Service quality</h3>
+        <div class="flex justify-around items-center">
+          <div class="text-[3rem]">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="">
+            <p class="text-[18px]">
+              Credit goes to <a href="#">icojoy.com</a> for Onebit icons #2 used
+              in this template. Etiam vel elit massa, sit amet.
+            </p>
+          </div>
+        </div>
+        <button type="button">Detail</button>
+      </div>
+      <div>
+        <h3 class="text-[30px] font-[700]">Service quality</h3>
+        <div class="flex justify-center items-center">
+          <div class="text-[3rem]">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="width-[30%]">
+            <p>
+              Credit goes to <a href="#">icojoy.com</a> for Onebit icons #2 used
+              in this template. Etiam vel elit massa, sit amet.
+            </p>
+          </div>
+        </div>
+        <button type="button">Detail</button>
+      </div>
+      <div>
+        <h3 class="text-[30px] font-[700]">Service quality</h3>
+        <div class="flex justify-center items-center">
+          <div class="text-[3rem]">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="width-[30%]">
+            <p>
+              Credit goes to <a href="#">icojoy.com</a> for Onebit icons #2 used
+              in this template. Etiam vel elit massa, sit amet.
+            </p>
+          </div>
+        </div>
+        <button type="button">Detail</button>
+      </div>
+      <div>
+        <h3 class="text-[30px] font-[700]">Service quality</h3>
+        <div class="flex justify-center items-center">
+          <div class="text-[3rem]">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="width-[30%]">
+            <p>
+              Credit goes to <a href="#">icojoy.com</a> for Onebit icons #2 used
+              in this template. Etiam vel elit massa, sit amet.
+            </p>
+          </div>
+        </div>
+        <button type="button">Detail</button>
+      </div>
+      <div>
+        <h3 class="text-[30px] font-[700]">Service quality</h3>
+        <div class="flex justify-center items-center">
+          <div class="text-[3rem]">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="width-[30%]">
+            <p>
+              Credit goes to <a href="#">icojoy.com</a> for Onebit icons #2 used
+              in this template. Etiam vel elit massa, sit amet.
+            </p>
+          </div>
+        </div>
+        <button type="button">Detail</button>
+      </div>
+      <div>
+        <h3 class="text-[30px] font-[700]">Service quality</h3>
+        <div class="flex justify-center items-center">
+          <div class="text-[3rem]">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="width-[30%]">
+            <p>
+              Credit goes to <a href="#">icojoy.com</a> for Onebit icons #2 used
+              in this template. Etiam vel elit massa, sit amet.
+            </p>
+          </div>
+        </div>
+        <button type="button">Detail</button>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

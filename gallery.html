@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinko Landing Page</title>
+    <link
+      rel="shortcut icon"
+      href="./images/dress-code.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "oxford-blue": `#002857`,
+              "oxford-blue-3": `#001233`,
+              "delft-blue": `#33405c`,
+              "slate-gray": `#7d8597`,
+              "cherry-blossom-pink": `#ffb3c6`,
+              "bakerMiller-pink": `#ff8fab`,
+              "russian-violet": `#241943`,
+              lilac: `#be97c4`,
+              cornsilk: `#fefae1`,
+              "earth-yellow": `#dda25f`,
+              "tigers-eye": `#bb6b25`,
+            },
+            fontFamily: {
+              lato: ["Lato", `sans-serif`],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="class = overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
+      style="
+        background-image: url(https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+      "
+    >
+      <header class="flex justify-evenly items-center mx-4 my-14">
+        <div>
+          <h1 class="text-7xl text-bakerMiller-pink font-medium">Pinko</h1>
+        </div>
+        <div class="flex gap-x-16 items-center">
+          <a
+            href="index.html"
+            class="text-black text-lg hover:bg-black text-white py-2 px-8 rounded-lg"
+            >Home</a
+          >
+          <a
+            href="aboutUs.html"
+            class="text-black text-lg hover:bg-black text-white py-2 px-8 rounded-lg"
+            >About Us</a
+          >
+          <a
+            href="blog.html"
+            class="text-black text-lg hover:bg-black text-white py-2 px-8 rounded-lg"
+            >Blog</a
+          >
+          <a href="gallery.html" class="active text-lg">Gallery</a>
+          <a
+            href="contact.html"
+            class="text-black text-lg hover:bg-black text-white py-2 px-8 rounded-lg"
+            >Contact</a
+          >
+        </div>
+      </header>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

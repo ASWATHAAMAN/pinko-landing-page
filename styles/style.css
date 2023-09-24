@@ -1,0 +1,24 @@
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.active{
+  background-color: black;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+}
+.active:hover{
+  background-color: black;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+}
